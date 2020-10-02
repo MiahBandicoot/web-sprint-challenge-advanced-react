@@ -10,9 +10,9 @@ const useForm =(initialValue) => {
     //     setSavedValue(values);
     //     window.localStorage.setItem(key, JSON.stringify(values));
     // };
-     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
-     const [values, setValues] = useState(initialValue);
+    const [values, setValues] = useState(initialValue);
 
     const handleChanges = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value });
